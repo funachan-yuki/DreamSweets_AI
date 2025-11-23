@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { DessertConcept } from "../types";
 
@@ -57,7 +56,6 @@ export const generateDessertConcept = async (
   keyword: string, 
   options?: { targetCost?: string, targetPrice?: string }
 ): Promise<DessertConcept> => {
-  // Always create a new instance to ensure we pick up the latest selected key
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   
   const costInstruction = options?.targetCost ? `目標原価: ${options.targetCost}程度になるように構成してください。` : "";
