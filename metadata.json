@@ -1,0 +1,5 @@
+{
+  "name": "DreamSweets AI",
+  "description": "Generate novel dessert concepts with realistic visualizations using Gemini Flash Image.",
+  "requestFramePermissions": []
+}
